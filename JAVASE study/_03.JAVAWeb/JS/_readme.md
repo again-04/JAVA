@@ -99,8 +99,6 @@ var 变量名 = "-";
 - 方法：trim()，去除字符串两边的空格
 - 方法：substring()，提取字符串中两个指定索引号之间的字符，含头不含尾
 
-------
-
 
 
 ### 3.JSON
@@ -164,3 +162,40 @@ BOM是浏览器对象模型，允许JS与浏览器对话，JS将浏览器的各�
 
 
 ### 5.DOM
+
+DOM是文档对象模型，将标记语言的各个组成部分封装为对应的对象：
+
+- Document：整个文档对象
+- Element：元素对象
+- Attribute：属性对象
+- Text：文本对象
+- Comment：注释对象
+
+![image-20240929111504129](C:\Users\周鹏\AppData\Roaming\Typora\typora-user-images\image-20240929111504129.png)
+
+JS通过DOM就可以对HTML进行操作。DOM是W3C（万维网联盟）的标准，定义访问了HTML和XML文档的标准，分为了三个不同的部分：
+
+- 1.Core DOM - 所有文档类型的标准模型
+- 2.XML DOM - XML文档的标准模型
+- 3.HTML DOM - HTML 文档的标准模型
+- - Image：<img>
+  - Button：<input type='button'>
+
+
+
+- Element对象可以通过Document对象获取，而Document对象是通过window对象获取的。
+- Document对象中提供了以下获取Element元素对象的函数：
+- - 1.根据id属性值获取，返回单个Element对象，`var h1 = document.getElementById('')`
+  - 2.根据标签名获取，返回Element对象数组，`var divs = document.getElementsByTagName('div')`
+  - 3.根据name属性值获取，返回Element对象数组，`var hobbys = document.getElementsByName('hobby')`
+  - 4.根据class属性值获取，返回Element对象数组，`var clss = document.getElementsByClassName('cls')`
+
+------
+
+
+
+## 8.JS事件监听
+
+![image-20240929132105959](C:\Users\周鹏\AppData\Roaming\Typora\typora-user-images\image-20240929132105959.png)
+
+![image-20240929134811543](C:\Users\周鹏\AppData\Roaming\Typora\typora-user-images\image-20240929134811543.png)
